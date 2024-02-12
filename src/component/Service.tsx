@@ -6,6 +6,10 @@ import { checkAndFilterCar } from "../helpers/carHelper.ts";
 export default function Service() {
   const { serviceCars, serviceFilters } = useContext(RootContext);
 
+  const isFilterApplied = useMemo(() => {
+    return Object.keys(serviceFilters).length > 0;
+  }, [serviceFilters]);
+
   const cars = useMemo(() => {
     if (!Object.keys(serviceFilters)?.length) return serviceCars;
     return serviceCars.filter((car: IServiceCar) =>
@@ -33,7 +37,12 @@ export default function Service() {
   return (
     <div className="grid grid-cols-2">
       <ServiceFilter />
-      <div className="flex flex-col gap-4 items-start">{renderResult()}</div>
+      <div className="flex flex-col gap-4 items-start">
+        <p className="font-bold">
+          {isFilterApplied ? "Search Results" : "Cars"}
+        </p>
+        {renderResult()}
+      </div>
     </div>
   );
 }
