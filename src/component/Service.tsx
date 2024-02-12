@@ -1,7 +1,8 @@
 import React, { useContext, useMemo } from "react";
 import ServiceFilter from "./ServiceFilter.tsx";
-import RootContext, { IServiceCar } from "../context/RootContext.ts";
+import RootContext from "../context/RootContext.ts";
 import { checkAndFilterCar } from "../helpers/carHelper.ts";
+import { IServiceCar } from "../types/Cars.ts";
 
 export default function Service() {
   const { serviceCars, serviceFilters } = useContext(RootContext);

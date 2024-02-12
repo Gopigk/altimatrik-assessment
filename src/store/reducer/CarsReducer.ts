@@ -1,7 +1,4 @@
-export interface ICar {
-  model: string;
-  imageUrl: string;
-}
+import { ICar } from "../../types/Cars";
 
 type IActionType = "UPDATE_CARS" | "SHOW_SUBMISSION_FORM" | "ADD_CAR";
 

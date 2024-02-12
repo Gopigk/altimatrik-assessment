@@ -1,8 +1,8 @@
 import React from "react";
-import { ICar } from "../store/reducer/CarsReducer";
 import { useAppSelector } from "../hooks/hooks.ts";
 import store from "../store/store.ts";
 import CarSubmissionForm from "./CarSubmissionForm.tsx";
+import { ICar } from "../types/Cars.ts";
 
 export default function Home() {
   const carsRootData = useAppSelector((state) => state.cars);
