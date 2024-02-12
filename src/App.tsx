@@ -11,7 +11,8 @@ import ServiceCars from "./JSON/serviceCarsLists.json";
 import { connect } from "react-redux";
 import store from "./store/store.ts";
 import Service from "./component/Service.tsx";
-import RootContext, { ICarFilters } from "./context/RootContext.ts";
+import RootContext from "./context/RootContext.ts";
+import { ICarFilters } from "./types/Cars.ts";
 
 const App = () => {
   const [filters, setFilters] = useState<ICarFilters>({} as ICarFilters);
