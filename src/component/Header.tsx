@@ -16,12 +16,6 @@ export default function Header() {
             <NavLink to="/service" className="font-semibold">
               Services
             </NavLink>
-            <NavLink to="/" className="font-semibold">
-              Gallery
-            </NavLink>
-            <NavLink to="/" className="font-semibold">
-              Contact us
-            </NavLink>
           </div>
         </nav>
       </div>
