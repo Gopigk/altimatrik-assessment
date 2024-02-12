@@ -5,8 +5,8 @@ import store from "../store/store.ts";
 import CarSubmissionForm from "./CarSubmissionForm.tsx";
 
 export default function Home() {
-  const carsStateData = useAppSelector((state) => state.cars);
-  const { cars, showSubmissionForm } = carsStateData;
+  const carsRootData = useAppSelector((state) => state.cars);
+  const { cars, showSubmissionForm } = carsRootData;
 
   const handleClick = () => {
     store.dispatch({

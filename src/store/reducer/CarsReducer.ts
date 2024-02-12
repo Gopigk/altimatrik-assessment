@@ -1,7 +1,6 @@
 export interface ICar {
   model: string;
   imageUrl: string;
-  price: number;
 }
 
 type IActionType = "UPDATE_CARS" | "SHOW_SUBMISSION_FORM" | "ADD_CAR";

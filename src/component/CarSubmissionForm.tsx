@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import store from "../store/store.ts";
-import { checkKeysHasValue } from "../helpers/dataHelpers.tsx";
+import { checkKeysHasValue } from "../helpers/dataHelpers.ts";
 
 type IKeys =
   | "model"

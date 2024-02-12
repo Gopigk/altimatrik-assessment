@@ -1,52 +1,42 @@
 [
   {
     "model": "Tesla",
-    "imageUrl": "https://www.carlogos.org/car-logos/tesla-logo-2007-full-download.png",
-    "price": 100000
+    "imageUrl": "https://www.carlogos.org/car-logos/tesla-logo-2007-full-download.png"
   },
   {
     "model": "Ford",
-    "imageUrl": "https://www.carlogos.org/car-logos/ford-logo-2017-download.png",
-    "price": 50000
+    "imageUrl": "https://www.carlogos.org/car-logos/ford-logo-2017-download.png"
   },
   {
     "model": "Ferrari",
-    "imageUrl": "https://www.carlogos.org/car-logos/ferrari-logo-2002-download.png",
-    "price": 200000
+    "imageUrl": "https://www.carlogos.org/car-logos/ferrari-logo-2002-download.png"
   },
   {
     "model": "Toyota",
-    "imageUrl": "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-download.png",
-    "price": 60000
+    "imageUrl": "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-download.png"
   },
   {
     "model": "Honda",
-    "imageUrl": "https://www.carlogos.org/car-logos/honda-logo-2000-full-download.png",
-    "price": 40000
+    "imageUrl": "https://www.carlogos.org/car-logos/honda-logo-2000-full-download.png"
   },
   {
     "model": "Nissan",
-    "imageUrl": "https://www.carlogos.org/car-logos/nissan-logo-2020-black.png",
-    "price": 45000
+    "imageUrl": "https://www.carlogos.org/car-logos/nissan-logo-2020-black.png"
   },
   {
     "model": "BMW",
-    "imageUrl": "https://www.carlogos.org/car-logos/bmw-logo-1997-download.png",
-    "price": 70000
+    "imageUrl": "https://www.carlogos.org/car-logos/bmw-logo-1997-download.png"
   },
   {
     "model": "Alfa Romeo",
-    "imageUrl": "https://www.carlogos.org/logo/Alfa-Romeo-logo-2015-1920x1080.png",
-    "price": 80000
+    "imageUrl": "https://www.carlogos.org/logo/Alfa-Romeo-logo-2015-1920x1080.png"
   },
   {
     "model": "Honda",
-    "imageUrl": "https://www.carlogos.org/car-logos/honda-logo-2000-full-download.png",
-    "price": 40000
+    "imageUrl": "https://www.carlogos.org/car-logos/honda-logo-2000-full-download.png"
   },
   {
     "model": "Nissan",
-    "imageUrl": "https://www.carlogos.org/car-logos/nissan-logo-2020-black.png",
-    "price": 45000
+    "imageUrl": "https://www.carlogos.org/car-logos/nissan-logo-2020-black.png"
   }
 ]

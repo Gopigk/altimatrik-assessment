@@ -1,0 +1,102 @@
+[
+  {
+    "model": "Tesla",
+    "imageUrl": "https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_1280.jpg",
+    "price": 100000,
+    "location": "Chennai",
+    "bodyType": "Sedan",
+    "owners": 1,
+    "fuelType": "Petrol",
+    "transmissionType": "Automatic"
+  },
+  {
+    "model": "Ford",
+    "imageUrl": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZCUyMGNhcnxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 150000,
+    "location": "Madurai",
+    "bodyType": "SUV",
+    "owners": 2,
+    "fuelType": "Diesel",
+    "transmissionType": "Manual"
+  },
+  {
+    "model": "Ferrari",
+    "imageUrl": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/F8-Tributo/7945/1598599471404/front-left-side-47.jpg",
+    "price": 200000,
+    "location": "Trichy",
+    "bodyType": "Coupe",
+    "owners": 1,
+    "fuelType": "CNG",
+    "transmissionType": "Automatic"
+  },
+  {
+    "model": "Toyota",
+    "imageUrl": "https://static.autox.com/uploads/cars/2023/05/toyota-rush.jpg",
+    "price": 600000,
+    "location": "Coimbatore",
+    "bodyType": "Sedan",
+    "owners": 3,
+    "fuelType": "Diesel",
+    "transmissionType": "Manual"
+  },
+  {
+    "model": "Honda",
+    "imageUrl": "https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/27074/civic-exterior-front-view.jpeg?q=80",
+    "price": 400000,
+    "location": "Ooty",
+    "bodyType": "SUV",
+    "owners": 2,
+    "fuelType": "Petrol",
+    "transmissionType": "Manual"
+  },
+  {
+    "model": "Nissan",
+    "imageUrl": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Nissan/X-Trail/3372/1666087743726/front-left-side-47.jpg?impolicy=resize&imwidth=420",
+    "price": 450000,
+    "location": "Kodaikanal",
+    "bodyType": "Sedan",
+    "owners": 1,
+    "fuelType": "CNG",
+    "transmissionType": "Automatic"
+  },
+  {
+    "model": "BMW",
+    "imageUrl": "https://media.istockphoto.com/id/1435226078/photo/front-of-a-white-bmw-m4-parked-on-a-street-with-trees-in-the-background.jpg?s=612x612&w=0&k=20&c=l1IupUrh-_Zbcse-hDkaUAh-qMD82hJspXjnN0IBZlg=",
+    "price": 700000,
+    "location": "Theni",
+    "bodyType": "Coupe",
+    "owners": 2,
+    "fuelType": "Diesel",
+    "transmissionType": "Manual"
+  },
+  {
+    "model": "Alfa Romeo",
+    "imageUrl": "https://imgd.aeplcdn.com/1200x900/n/cw/ec/138699/right-front-three-quarter0.jpeg?isig=0&wm=0",
+    "price": 800000,
+    "location": "Pondicherry",
+    "bodyType": "Sedan",
+    "owners": 1,
+    "fuelType": "Petrol",
+    "transmissionType": "Automatic"
+  },
+  {
+    "model": "Honda",
+    "imageUrl": "https://www.honda.de/content/dam/local/germany/cars/news/news_2015-01-23_vorab_premiere_civic_02.jpg/jcr:content/renditions/c2_r.jpg",
+    "price": 400000,
+    "location": "Kanyakumari",
+    "bodyType": "SUV",
+    "owners": 2,
+    "fuelType": "Diesel",
+    "transmissionType": "Manual"
+  },
+  {
+    "model": "Nissan",
+    "imageUrl": "https://www.one.nissan.in/common/images/Nissan_Magnite_Geza_Special_Edition.png",
+    "price": 200000,
+    "location": "Viruthunagar",
+    "bodyType": "Sedan",
+    "owners": 1,
+    "fuelType": "CNG",
+    "transmissionType": "Automatic"
+  }
+]
