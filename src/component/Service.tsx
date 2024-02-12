@@ -3,6 +3,7 @@ import ServiceFilter from "./ServiceFilter.tsx";
 import RootContext from "../context/RootContext.ts";
 import { checkAndFilterCar } from "../helpers/carHelper.ts";
 import { IServiceCar } from "../types/Cars.ts";
+import { checkKeysHasValue } from "../helpers/dataHelpers.ts";
 
 export default function Service() {
   const { serviceCars, serviceFilters } = useContext(RootContext);
@@ -12,11 +13,13 @@ export default function Service() {
   }, [serviceFilters]);
 
   const cars = useMemo(() => {
-    if (!Object.keys(serviceFilters)?.length) return serviceCars;
+    if (!checkKeysHasValue(serviceFilters)) return serviceCars;
     return serviceCars.filter((car: IServiceCar) =>
       checkAndFilterCar(car, serviceFilters)
     );
   }, [serviceFilters, serviceCars]);
+
+  console.log("serviceCars", serviceFilters, checkKeysHasValue(serviceFilters));
 
   const renderCarItem = (car: IServiceCar, index: number) => {
     return (

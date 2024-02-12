@@ -34,6 +34,7 @@ const App = () => {
         serviceCars: ServiceCars,
         serviceFilters: filters,
         updateFilters: handleUpdateFilters,
+        resetFilters: () => setFilters({} as ICarFilters),
       }}
     >
       <ErrorBoundary>

@@ -1,4 +1,5 @@
-export const checkKeysHasValue = (obj: any, keys: string[]) => {
+export const checkKeysHasValue = (obj: any, keys?: string[]) => {
+  if (!keys) return Object.values(obj).some((value) => value);
   return keys.every((key) => obj[key]);
 };
 

@@ -9,7 +9,8 @@ const Label = (props: { text: string }) => {
 };
 
 export default function ServiceFilter() {
-  const { serviceFilters, updateFilters } = useContext(RootContext);
+  const { serviceFilters, updateFilters, resetFilters } =
+    useContext(RootContext);
 
   const { serviceCars } = useContext(RootContext);
 
@@ -50,11 +51,18 @@ export default function ServiceFilter() {
   };
 
   const handleMultipleChange = (key: string, value: string[]) => {
-    const updatedValue = [...(serviceFilters[key] || []), ...value];
-    updateFilters({
-      ...serviceFilters,
-      [key]: removeDuplicatesInArray(updatedValue),
-    });
+    const index = serviceFilters[key] && serviceFilters[key]?.indexOf(value[0]);
+    if (index > -1) {
+      const updatedValue = serviceFilters[key].filter(
+        (item) => item !== value[0]
+      );
+      return handleChange(key, updatedValue);
+    }
+    return handleChange(key, [...(serviceFilters[key] || []), ...value]);
+  };
+
+  const handleResetFilter = () => {
+    resetFilters();
   };
 
   const locationFilter = () => {
@@ -99,12 +107,7 @@ export default function ServiceFilter() {
                 type="checkbox"
                 value={brand.value}
                 checked={serviceFilters?.brand?.includes(brand.value)}
-                onChange={() =>
-                  handleMultipleChange("brand", [
-                    ...(serviceFilters.brand || []),
-                    brand.value,
-                  ])
-                }
+                onChange={() => handleMultipleChange("brand", [brand.value])}
               />
               <label>{brand.label}</label>
             </div>
@@ -226,6 +229,12 @@ export default function ServiceFilter() {
       {renderBudgetFilter()}
       {renderFuelTypeFilter()}
       {renderTransmissionFilter()}
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        onClick={handleResetFilter}
+      >
+        Reset Filter
+      </button>
     </div>
   );
 }
